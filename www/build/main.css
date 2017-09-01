@@ -25367,6 +25367,14 @@ page-register .padding-right {
   padding-right: 5px;
 }
 
+page-register .nobackground {
+  background: none;
+}
+
+page-register .customback {
+  background: #f1f1f1;
+}
+
 page-register .container {
   width: 85%;
   margin: auto;
@@ -25410,6 +25418,7 @@ page-register .texttitle {
 
 page-register .paddingbtn {
   padding: 20px 0;
+  margin-bottom: 20px;
 }
 
 page-register .linktext {
