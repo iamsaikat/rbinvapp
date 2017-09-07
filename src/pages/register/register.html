@@ -1,7 +1,7 @@
-<ion-content class="customback">
 
+
+<ion-content class="custom-back">
   <div class="redline"></div>
-
   <p class="logintitle">User Registration</p>
   <img class="blueline" src="../assets/images/blueline.jpg" alt="blueline">
 
@@ -59,6 +59,7 @@
     </ion-list>    
 
     <button ion-button block color="danger" class="paddingbtn">Register Now</button>
+    <button ion-button block color="danger" [navPush]="homePage" class="paddingbtn">Cancel</button>
   </div>
 
 </ion-content>
