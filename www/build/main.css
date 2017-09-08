@@ -25199,6 +25199,39 @@ ion-navbar.toolbar {
   }
 }
 
+page-confirm .loginicon {
+  display: block;
+  padding-top: 20%;
+  width: 30%;
+  margin: auto;
+}
+
+page-confirm .logintitle {
+  font-family: 'Roboto';
+  color: #353535;
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+page-confirm .blueline {
+  width: auto;
+  margin: auto;
+  display: block;
+  padding-bottom: 10%;
+}
+
+page-confirm .container {
+  width: 85%;
+  margin: auto;
+}
+
+page-confirm .marginbtn {
+  margin: 5% 0;
+}
+
 @font-face {
   page-home {
     font-family: 'Roboto Light';
@@ -25211,28 +25244,10 @@ ion-navbar.toolbar {
   }
 }
 
-@font-face {
-  page-home {
-    font-family: 'Roboto';
-    src: url("../../assets/fonts/Roboto Regular.eot");
-    src: url("../../assets/fonts/Roboto Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Roboto Regular.woff2") format("woff2"), url("../../assets/fonts/Roboto Regular.woff") format("woff"), url("../../assets/fonts/Roboto Regular.svg#Roboto Regular") format("svg");
-    font-weight: 400;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-2044;
-  }
-}
-
-@font-face {
-  page-home {
-    font-family: 'Roboto Medium';
-    src: url("../../assets/fonts/Roboto Medium.eot");
-    src: url("../../assets/fonts/Roboto Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Roboto Medium.woff2") format("woff2"), url("../../assets/fonts/Roboto Medium.woff") format("woff"), url("../../assets/fonts/Roboto Medium.svg#Roboto Medium") format("svg");
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    unicode-range: U+0020-2044;
-  }
+page-home ion-title img {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
 }
 
 page-home .no-border {
@@ -25255,25 +25270,103 @@ page-home .padding-right {
   padding-right: 5px;
 }
 
+page-home .nobackground {
+  background: none;
+}
+
+page-home .custom-back {
+  background: url("../assets/images/homeback.jpg") no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+
 page-home .container {
   width: 85%;
   margin: auto;
 }
 
-page-home .redline {
-  width: 100%;
-  background: #e02626;
-  height: 0.3%;
+page-home .formdiv {
+  margin: auto;
+  width: 80%;
 }
 
-page-home .loginicon {
+page-home .formdiv h2 {
+  font-family: 'Roboto Light';
+  color: #fff;
+  text-align: center;
+  font-size: 1.6em;
+  margin: 0;
+  font-weight: normal;
+  padding-bottom: 15px;
+  padding-top: 65%;
+}
+
+page-home .formdiv img {
+  display: block;
+  margin: 0 auto;
+}
+
+page-home .social-set {
+  text-align: center;
+  color: #fff;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+page-home .social-set ion-icon {
+  padding: 0 3px;
+}
+
+page-home .marginbtn {
+  margin-bottom: 2%;
+}
+
+page-home .item-input .label-md {
+  color: #fff;
+}
+
+page-home .item-input-has-focus .label-md[floating], page-home .input-has-focus, page-home .label-md[floating] {
+  color: #fff;
+}
+
+page-home .bar-button-default-md:hover:not(.disable-hover) {
+  color: #fff;
+}
+
+page-home .phone_text {
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+}
+
+page-home .phone_text ion-icon {
+  padding-right: 4px;
+  padding-bottom: 5%;
+}
+
+page-home .linktext {
+  font-family: 'Roboto Medium';
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: none;
+  display: block;
+  margin: auto;
+}
+
+page-home .texttitle {
+  color: #fff;
+}
+
+page-investment .loginicon {
   display: block;
   padding-top: 20%;
   width: 30%;
   margin: auto;
 }
 
-page-home .logintitle {
+page-investment .logintitle {
   font-family: 'Roboto';
   color: #353535;
   text-align: center;
@@ -25283,24 +25376,132 @@ page-home .logintitle {
   padding-bottom: 10px;
 }
 
-page-home .blueline {
+page-investment .blueline {
+  width: auto;
+  margin: auto;
+  display: block;
+  padding-bottom: 10%;
+}
+
+page-investment .container {
+  width: 85%;
+  margin: auto;
+}
+
+page-investment .marginbtn {
+  margin: 5% 0;
+}
+
+@font-face {
+  page-login {
+    font-family: 'Roboto Light';
+    src: url("../../assets/fonts/Roboto Light.eot");
+    src: url("../../assets/fonts/Roboto Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Roboto Light.woff2") format("woff2"), url("../../assets/fonts/Roboto Light.woff") format("woff"), url("../../assets/fonts/Roboto Light.svg#Roboto Light") format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2044;
+  }
+}
+
+@font-face {
+  page-login {
+    font-family: 'Roboto';
+    src: url("../../assets/fonts/Roboto Regular.eot");
+    src: url("../../assets/fonts/Roboto Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Roboto Regular.woff2") format("woff2"), url("../../assets/fonts/Roboto Regular.woff") format("woff"), url("../../assets/fonts/Roboto Regular.svg#Roboto Regular") format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2044;
+  }
+}
+
+@font-face {
+  page-login {
+    font-family: 'Roboto Medium';
+    src: url("../../assets/fonts/Roboto Medium.eot");
+    src: url("../../assets/fonts/Roboto Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Roboto Medium.woff2") format("woff2"), url("../../assets/fonts/Roboto Medium.woff") format("woff"), url("../../assets/fonts/Roboto Medium.svg#Roboto Medium") format("svg");
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2044;
+  }
+}
+
+page-login .no-border {
+  border: none !important;
+}
+
+page-login .nopaddingleft {
+  padding-left: 0px !important;
+}
+
+page-login .no-padding {
+  padding: 0 !important;
+}
+
+page-login .label-md {
+  margin-top: 25px;
+}
+
+page-login .padding-right {
+  padding-right: 5px;
+}
+
+page-login .nobackground {
+  background: none;
+}
+
+page-login .customback {
+  background: #f1f1f1;
+}
+
+page-login .container {
+  width: 85%;
+  margin: auto;
+}
+
+page-login .redline {
+  width: 100%;
+  background: #e02626;
+  height: 0.3%;
+}
+
+page-login .loginicon {
+  display: block;
+  padding-top: 20%;
+  width: 30%;
+  margin: auto;
+}
+
+page-login .logintitle {
+  font-family: 'Roboto';
+  color: #353535;
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+page-login .blueline {
   width: auto;
   margin: 0 auto;
   display: block;
 }
 
-page-home .texttitle {
+page-login .texttitle {
   font-family: 'Roboto';
   color: #353535;
   font-size: 14px !important;
   text-align: left;
 }
 
-page-home .paddingbtn {
+page-login .paddingbtn {
   padding: 20px 0;
 }
 
-page-home .linktext {
+page-login .linktext {
   font-family: 'Roboto Medium';
   color: #353535;
   font-size: 14px;
@@ -25309,6 +25510,18 @@ page-home .linktext {
   text-decoration: none;
   display: block;
   margin: auto;
+}
+
+page-login .login_flag_container {
+  width: 25%;
+  display: block;
+  margin: auto;
+  margin-top: 5%;
+}
+
+page-login .flag_login {
+  margin: 0 5px;
+  width: 35%;
 }
 
 @font-face {
@@ -25395,7 +25608,7 @@ page-register .loginicon {
 
 page-register .logintitle {
   font-family: 'Roboto';
-  color: #353535;
+  color: #fff;
   text-align: center;
   font-size: 20px;
   margin: 0;
@@ -25411,7 +25624,7 @@ page-register .blueline {
 
 page-register .texttitle {
   font-family: 'Roboto';
-  color: #353535;
+  color: #fff;
   font-size: 14px !important;
   text-align: left;
 }
@@ -25430,4 +25643,22 @@ page-register .linktext {
   text-decoration: none;
   display: block;
   margin: auto;
+}
+
+page-register .custom-back {
+  background: url("../assets/images/homeback.jpg") no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+
+page-register .item-input .label-md {
+  color: #fff;
+}
+
+page-register .item-input-has-focus .label-md[floating], page-register .input-has-focus, page-register .label-md[floating] {
+  color: #fff;
+}
+
+page-register .bar-button-default-md:hover:not(.disable-hover) {
+  color: #fff;
 }
