@@ -11,6 +11,9 @@ import { LoginPage } from '../pages/login/login';
 import { SettingsPage } from '../pages/settings/settings';
 import { InvestmentPage } from '../pages/investment/investment';
 import { ConfirmPage } from '../pages/confirm/confirm';
+import { HistoryPage } from '../pages/history/history';
+import { PreferencePage } from '../pages/preference/preference';
+import { ForgotPage } from '../pages/forgot/forgot';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { ConfirmPage } from '../pages/confirm/confirm';
     LoginPage,
     SettingsPage,
     InvestmentPage,
-    ConfirmPage
+    ConfirmPage,
+    HistoryPage,
+    PreferencePage,
+    ForgotPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +40,10 @@ import { ConfirmPage } from '../pages/confirm/confirm';
     LoginPage,
     SettingsPage,
     InvestmentPage,
-    ConfirmPage
+    ConfirmPage,
+    HistoryPage,
+    PreferencePage,
+    ForgotPage
   ],
   providers: [
     StatusBar,
