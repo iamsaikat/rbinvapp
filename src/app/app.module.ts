@@ -6,6 +6,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 // Import HttpClientModule from @angular/common/http
 import {HttpClientModule} from '@angular/common/http';
 
+import { StarRatingModule } from 'angular-star-rating';
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { RegisterPage } from '../pages/register/register';
@@ -17,6 +19,9 @@ import { HistoryPage } from '../pages/history/history';
 import { PreferencePage } from '../pages/preference/preference';
 import { ForgotPage } from '../pages/forgot/forgot';
 import { WebServiceProvider } from '../providers/web-service/web-service';
+import { PrefresultPage } from '../pages/prefresult/prefresult';
+import { DetailsPage } from '../pages/details/details';
+
 
 @NgModule({
   declarations: [
@@ -29,11 +34,14 @@ import { WebServiceProvider } from '../providers/web-service/web-service';
     ConfirmPage,
     HistoryPage,
     PreferencePage,
-    ForgotPage
+    ForgotPage,
+    PrefresultPage,
+    DetailsPage
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    StarRatingModule.forRoot(),
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -47,7 +55,9 @@ import { WebServiceProvider } from '../providers/web-service/web-service';
     ConfirmPage,
     HistoryPage,
     PreferencePage,
-    ForgotPage
+    ForgotPage,
+    PrefresultPage,
+    DetailsPage
   ],
   providers: [
     StatusBar,
