@@ -3,6 +3,8 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+// Import HttpClientModule from @angular/common/http
+import {HttpClientModule} from '@angular/common/http';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -14,6 +16,7 @@ import { ConfirmPage } from '../pages/confirm/confirm';
 import { HistoryPage } from '../pages/history/history';
 import { PreferencePage } from '../pages/preference/preference';
 import { ForgotPage } from '../pages/forgot/forgot';
+import { WebServiceProvider } from '../providers/web-service/web-service';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,7 @@ import { ForgotPage } from '../pages/forgot/forgot';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -48,7 +52,8 @@ import { ForgotPage } from '../pages/forgot/forgot';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    WebServiceProvider
   ]
 })
 export class AppModule {}
