@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import {HomePage} from '../home/home';
+import { ConfirmPage } from './../confirm/confirm';
 
 /**
  * Generated class for the PreferencePage page.
@@ -26,5 +27,8 @@ export class PreferencePage {
 
    goToHomePage(){
     this.navCtrl.popTo(HomePage);
+  }
+  goToConfirmPage(){
+    this.navCtrl.push(ConfirmPage);
   }
 }

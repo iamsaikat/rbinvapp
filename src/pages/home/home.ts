@@ -1,3 +1,4 @@
+import { WebServiceProvider } from './../../providers/web-service/web-service';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {RegisterPage} from '../register/register';
@@ -11,8 +12,11 @@ import {ForgotPage} from '../forgot/forgot';
 })
 export class HomePage {
    //registerPage = RegisterPage;
+   user = { "password" : "", "loginID" : "" };
+   responseData : any;
+   errData : any;
    
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public authService:WebServiceProvider) {
   }
 
   ionViewDidLoad() {
@@ -29,5 +33,24 @@ export class HomePage {
 
   goToForgotPasswordPage(){
     this.navCtrl.push(ForgotPage);
+  }
+
+  login(){
+    console.log(this.user); 
+    
+    this.authService.postData(this.user,'signin').then((result) => {
+      this.responseData = result;
+      console.log("API Response: "+ JSON.stringify(this.responseData));
+      if (this.responseData.code == 0){
+        this.navCtrl.push(InvestmentPage);
+      }else{
+        console.log("Pelase check your credentials");
+      }
+      
+    }, (err) => {
+      this.errData = err;
+      // Error log
+      console.log("API Error : "+this.responseData);
+    });
   }
 }

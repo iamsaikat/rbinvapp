@@ -32,15 +32,15 @@
     <ion-list>
       <ion-item class="nopaddingleft nobackground">
         <ion-label floating class="texttitle">Username</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input [(ngModel)]="user.loginID" type="text" name="fname" type="text"></ion-input>
       </ion-item>
 
       <ion-item class="nopaddingleft nobackground">
         <ion-label floating class="texttitle">Password</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input [(ngModel)]="user.password"  type="password" name="password"></ion-input>
       </ion-item>
     </ion-list>
-    <button ion-button block color="danger" class="marginbtn" (click)="goToInvestmentPage();">LOGIN</button>
+    <button ion-button block color="danger" class="marginbtn" (click)="login();">LOGIN</button>
     <div class="linktext"><span (click)="goToRegisterPage();">Register</span> | <span (click)="goToForgotPasswordPage();">Forgot Password</span></div>
   </div>
 

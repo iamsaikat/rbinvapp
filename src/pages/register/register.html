@@ -9,17 +9,22 @@
     <ion-list>
       <ion-item class="nopaddingleft nobackground">
         <ion-label floating class="texttitle">First Name</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input [(ngModel)]="user.fname" type="text" name="fname" type="text"></ion-input>
       </ion-item>
 
       <ion-item class="nopaddingleft nobackground">
         <ion-label floating class="texttitle">Last Name</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input [(ngModel)]="user.lname" type="text" name="lname" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item class="nopaddingleft nobackground">
+        <ion-label floating class="texttitle">Email ID</ion-label>
+        <ion-input [(ngModel)]="user.email" type="text" name="email" type="text"></ion-input>
       </ion-item>
 
       <ion-item class="nopaddingleft nobackground">
         <ion-label floating class="texttitle">Password</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input [(ngModel)]="user.passwd"  type="password" name="password" value=""></ion-input>
       </ion-item>
 
       <ion-item class="nopaddingleft nobackground">
@@ -34,31 +39,36 @@
     <ion-list>
       <ion-item class="nopaddingleft nobackground">
         <ion-label floating class="texttitle">Street</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input [(ngModel)]="user.street" type="text" name="street"></ion-input>
       </ion-item>
 
       <ion-item class="nopaddingleft nobackground">
         <ion-label floating class="texttitle">City</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input [(ngModel)]="user.city" type="text" name="city"></ion-input>
       </ion-item>
 
       <ion-item class="nopaddingleft nobackground">
         <ion-label floating class="texttitle">Zip</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input [(ngModel)]="user.zip" type="text" name="zip"></ion-input>
+      </ion-item>
+
+      <ion-item class="nopaddingleft nobackground">
+        <ion-label floating class="texttitle">State</ion-label>
+        <ion-input [(ngModel)]="user.state" type="text" name="state"></ion-input>
       </ion-item>
 
       <ion-item class="nopaddingleft nobackground">
         <ion-label floating class="texttitle">Country</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input [(ngModel)]="user.country" type="text" name="country"></ion-input>
       </ion-item>
       
       <ion-item class="nopaddingleft nobackground">
         <ion-label floating class="texttitle">Mobile Number</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-input [(ngModel)]="user.mobile" type="text" name="mobile"></ion-input>
       </ion-item>      
     </ion-list>    
 
-    <button ion-button block color="danger" class="paddingbtn">Register Now</button>
+    <button ion-button block color="danger" class="paddingbtn" (click)="register();">Register Now</button>
     <button ion-button block color="danger" (click)="goToHomePage();" class="paddingbtn">Cancel</button>
   </div>
 

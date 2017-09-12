@@ -11,10 +11,10 @@ import 'rxjs/add/operator/map';
 */
 let apiUrl = 'http://182.76.63.74:8080/rbinv/';
 @Injectable()
-export class AuthServiceProvider {
+export class WebServiceProvider {
 
   constructor(public http: HttpClient) {
-    console.log('Hello AuthServiceProvider Provider');
+    console.log('Hello WebServiceProvider Provider');
   }
   
   postData(credentials, type) {
