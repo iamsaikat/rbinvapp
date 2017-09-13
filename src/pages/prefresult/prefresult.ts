@@ -31,4 +31,7 @@ export class PrefresultPage {
   goToDetailsPage(){
     this.navCtrl.push(DetailsPage);
   }
+  goBack(){
+    this.navCtrl.pop();
+  }
 }

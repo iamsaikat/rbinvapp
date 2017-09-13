@@ -1,5 +1,7 @@
+import { InvestmentPage } from './../investment/investment';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
 
 /**
  * Generated class for the ConfirmPage page.
@@ -20,6 +22,9 @@ export class ConfirmPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ConfirmPage');
+  }
+  goToInvestmentPage(){
+    this.navCtrl.push(InvestmentPage);
   }
 
 }
