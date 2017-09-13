@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import {HomePage} from '../home/home';
 import { ConfirmPage } from './../confirm/confirm';
 
 /**
@@ -25,10 +24,11 @@ export class PreferencePage {
     console.log('ionViewDidLoad PreferencePage');
   }
 
-   goToHomePage(){
-    this.navCtrl.popTo(HomePage);
-  }
   goToConfirmPage(){
     this.navCtrl.push(ConfirmPage);
+  }
+  
+  goBack(){
+    this.navCtrl.pop();
   }
 }

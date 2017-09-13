@@ -28,5 +28,8 @@ export class HistoryPage {
     this.navCtrl.popTo(HomePage);
   }
 
+  goBack(){
+    this.navCtrl.pop();
+  }
 
 }
