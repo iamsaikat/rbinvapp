@@ -1,7 +1,7 @@
+import { PrefresultPage } from './../prefresult/prefresult';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { ConfirmPage } from './../confirm/confirm';
 
 /**
  * Generated class for the PreferencePage page.
@@ -24,8 +24,8 @@ export class PreferencePage {
     console.log('ionViewDidLoad PreferencePage');
   }
 
-  goToConfirmPage(){
-    this.navCtrl.push(ConfirmPage);
+  goToPrefresultPage(){
+    this.navCtrl.push(PrefresultPage);
   }
   
   goBack(){
