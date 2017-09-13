@@ -21,6 +21,7 @@ import { ForgotPage } from '../pages/forgot/forgot';
 import { WebServiceProvider } from '../providers/web-service/web-service';
 import { PrefresultPage } from '../pages/prefresult/prefresult';
 import { DetailsPage } from '../pages/details/details';
+import { LinkbankPage } from '../pages/linkbank/linkbank';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { DetailsPage } from '../pages/details/details';
     PreferencePage,
     ForgotPage,
     PrefresultPage,
-    DetailsPage
+    DetailsPage,
+    LinkbankPage
   ],
   imports: [
     BrowserModule,
@@ -57,7 +59,8 @@ import { DetailsPage } from '../pages/details/details';
     PreferencePage,
     ForgotPage,
     PrefresultPage,
-    DetailsPage
+    DetailsPage,
+    LinkbankPage
   ],
   providers: [
     StatusBar,
