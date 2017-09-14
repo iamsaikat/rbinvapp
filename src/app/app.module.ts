@@ -22,7 +22,9 @@ import { WebServiceProvider } from '../providers/web-service/web-service';
 import { PrefresultPage } from '../pages/prefresult/prefresult';
 import { DetailsPage } from '../pages/details/details';
 import { LinkbankPage } from '../pages/linkbank/linkbank';
-
+import { VerificationPage } from '../pages/verification/verification';
+import { PendingpaymentPage } from '../pages/pendingpayment/pendingpayment';
+import { ActivePage } from '../pages/active/active';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,10 @@ import { LinkbankPage } from '../pages/linkbank/linkbank';
     ForgotPage,
     PrefresultPage,
     DetailsPage,
-    LinkbankPage
+    LinkbankPage,
+    VerificationPage,
+    PendingpaymentPage,
+    ActivePage
   ],
   imports: [
     BrowserModule,
@@ -60,7 +65,10 @@ import { LinkbankPage } from '../pages/linkbank/linkbank';
     ForgotPage,
     PrefresultPage,
     DetailsPage,
-    LinkbankPage
+    LinkbankPage,
+    VerificationPage,
+    PendingpaymentPage,
+    ActivePage
   ],
   providers: [
     StatusBar,
