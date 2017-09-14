@@ -25,6 +25,7 @@ import { LinkbankPage } from '../pages/linkbank/linkbank';
 import { VerificationPage } from '../pages/verification/verification';
 import { PendingpaymentPage } from '../pages/pendingpayment/pendingpayment';
 import { ActivePage } from '../pages/active/active';
+import { ReinvestmentPage } from '../pages/reinvestment/reinvestment';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { ActivePage } from '../pages/active/active';
     LinkbankPage,
     VerificationPage,
     PendingpaymentPage,
-    ActivePage
+    ActivePage,
+    ReinvestmentPage
   ],
   imports: [
     BrowserModule,
@@ -68,7 +70,8 @@ import { ActivePage } from '../pages/active/active';
     LinkbankPage,
     VerificationPage,
     PendingpaymentPage,
-    ActivePage
+    ActivePage,
+    ReinvestmentPage
   ],
   providers: [
     StatusBar,
