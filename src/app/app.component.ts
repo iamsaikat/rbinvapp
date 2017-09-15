@@ -17,6 +17,10 @@ export class MyApp {
    @ViewChild(Nav) nav: Nav;
 
   rootPage:any = HomePage;
+  settings = SettingsPage;
+  prefernace = PreferencePage;
+  history = HistoryPage;
+  reinv = ReinvestmentPage;
 
   pages: Array<any>;
 
@@ -31,6 +35,7 @@ export class MyApp {
       { title: 'Logout', component: HomePage, icon: 'ios-home' }
     ];
     
+    
 
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
@@ -43,7 +48,7 @@ export class MyApp {
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
+    this.nav.setRoot(page);
   }
     
 }

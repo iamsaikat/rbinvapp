@@ -9,22 +9,22 @@
     </div>
 
     <ion-list>
-      <ion-item class="custom-item">
+      <ion-item class="custom-item" menuClose (click)="openPage(prefernace)">
         <ion-icon name="md-checkmark-circle-outline" item-start></ion-icon>
           My Preference
         <ion-icon name="md-arrow-dropright" item-end></ion-icon>
       </ion-item>
-      <ion-item class="custom-item">
+      <ion-item class="custom-item" menuClose (click)="openPage(history)">
         <ion-icon name="md-time" item-start></ion-icon>
           Investment History
         <ion-icon name="md-arrow-dropright" item-end></ion-icon>
       </ion-item>
-      <ion-item class="custom-item">
+      <ion-item class="custom-item" menuClose (click)="openPage(reinv)">
         <ion-icon name="md-card" item-start></ion-icon>
           Reinvestment
         <ion-icon name="md-arrow-dropright" item-end></ion-icon>
       </ion-item>
-      <ion-item class="custom-item" (click)="goToSettingsPage()">
+      <ion-item class="custom-item" menuClose (click)="openPage(settings)">
         <ion-icon name="md-cog" item-start></ion-icon>
           Settings
         <ion-icon name="md-arrow-dropright" item-end></ion-icon>
