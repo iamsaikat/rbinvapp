@@ -2,6 +2,7 @@ import { WebServiceProvider } from './../../providers/web-service/web-service';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
+import { ToastController } from 'ionic-angular';
 
 import {RegisterPage} from '../register/register';
 import {InvestmentPage} from '../investment/investment';
@@ -18,7 +19,8 @@ export class HomePage {
    responseData : any;
    errData : any;
    
-  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController, public authService:WebServiceProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController, 
+    public authService:WebServiceProvider, public toastCtrl: ToastController) {
   }
 
     showConfirm() {
@@ -67,8 +69,12 @@ export class HomePage {
       console.log("API Response: "+ JSON.stringify(this.responseData));
       if (this.responseData.code == 0){
         this.navCtrl.push(InvestmentPage);
+        let toast = this.toastCtrl.create({message: `You succesfully Login!`,duration: 2000});
+        toast.present();
       }else{
-        console.log("Pelase check your credentials");
+        let toast = this.toastCtrl.create({message: `Please check your credentials!`,duration: 3000});
+        toast.present();
+        console.log("Please check your credentials");
       }
       
     }, (err) => {
