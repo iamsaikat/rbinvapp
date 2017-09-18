@@ -5,6 +5,7 @@ import {HomePage} from '../home/home';
 import {VerificationPage} from '../verification/verification';
 import {PendingpaymentPage} from '../pendingpayment/pendingpayment';
 import {ActivePage} from '../active/active';
+import {ReinvestmentPage} from '../reinvestment/reinvestment';
 
 /**
  * Generated class for the HistoryPage page.
@@ -44,5 +45,9 @@ export class HistoryPage {
 
     goToActivePage(){
       this.navCtrl.push(ActivePage);
+    }
+
+    goToReinvestmentPage(){
+      this.navCtrl.push(ReinvestmentPage);
     }
 }
