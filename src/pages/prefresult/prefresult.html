@@ -24,13 +24,12 @@
   <img class="blueline" src="assets/images/blueline.jpg" alt="blueline">
 
   <div class="container">
-    <ion-card class="marginbtn">
+    <ion-card class="marginbtn" *ngFor="let result of prefResult; let i = index">
       <ion-card-content>
-        <img class="bank" src="assets/images/citi.jpg" alt="bank">
+        <img class="bank" src="http://182.76.63.74:8080/rbinv/banklogo?logo={{result.logo}}" alt="bank">
         <img class="star" src="assets/images/star.jpg" alt="bank">
         <ul>
-          <li>1.6% per anum 5 years</li>
-          <li>1.7% per anum 5 years</li>
+          <li>{{result.rate}}% per anum {{result.tenure}} years</li>
         </ul>
           <button ion-button icon-left block class="marginbtn custombtn" (click)="goToDetailsPage();"> <strong>INVEST NOW</strong></button>
       </ion-card-content>

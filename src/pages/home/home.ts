@@ -21,6 +21,7 @@ export class HomePage {
    
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController, 
     public authService:WebServiceProvider, public toastCtrl: ToastController) {
+
   }
 
     showConfirm() {
@@ -68,13 +69,13 @@ export class HomePage {
       this.responseData = result;
       console.log("API Response: "+ JSON.stringify(this.responseData));
       if (this.responseData.code == 0){
+        localStorage.setItem('currentUser', JSON.stringify(this.responseData.data.customer));
         this.navCtrl.push(InvestmentPage);
-        let toast = this.toastCtrl.create({message: `You succesfully Login!`,duration: 2000});
+        let toast = this.toastCtrl.create({message: `You have succesfully Logged in!`,duration: 2000});
         toast.present();
       }else{
         let toast = this.toastCtrl.create({message: `Please check your credentials!`,duration: 3000});
         toast.present();
-        console.log("Please check your credentials");
       }
       
     }, (err) => {

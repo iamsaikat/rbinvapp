@@ -36,12 +36,12 @@
   <ion-list>
       <ion-item class="nopaddingleft nobackground">
         <ion-label floating class="texttitle">Amount</ion-label>
-        <ion-input type="text">Amount</ion-input>
+        <ion-input [(ngModel)]="prefreq.amount" type="text">Amount</ion-input>
       </ion-item>
 
       <ion-item class="nopaddingleft nobackground">
         <ion-label floating class="texttitle">Tenure</ion-label>
-        <ion-input type="text">Tenure</ion-input>
+        <ion-input [(ngModel)]="prefreq.tenure" type="text">Tenure</ion-input>
       </ion-item>     
   </ion-list> 
 
@@ -65,7 +65,7 @@
       <ion-col>
       <ion-item class="nopaddingleft nobackground">
         <ion-label floating class="texttitle">From</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-input [(ngModel)]="prefreq.minExpRate" type="text"></ion-input>
       </ion-item>        
       </ion-col>
       <ion-col>
@@ -77,7 +77,7 @@
     </ion-row>
   </ion-grid>
 
-  <button ion-button icon-left block color="danger" class="marginbtn" (click)="goToPrefresultPage()"><strong>SUBMIT</strong></button>
+  <button ion-button icon-left block color="danger" class="marginbtn" (click)="prefSearch()"><strong>SUBMIT</strong></button>
   </div>
 
   <div class="container">

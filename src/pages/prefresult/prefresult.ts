@@ -16,8 +16,10 @@ import {DetailsPage} from '../details/details';
   templateUrl: 'prefresult.html',
 })
 export class PrefresultPage {
-
+  prefResult: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.prefResult = this.navParams.get('result');
+    console.log("Getting data from search:"+ this.prefResult);
   }
 
   ionViewDidLoad() {
