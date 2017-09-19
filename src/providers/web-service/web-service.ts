@@ -30,5 +30,18 @@ export class WebServiceProvider {
 
   }
 
+  getData(credentials, type) {
+    return new Promise((resolve, reject) => {
+
+      this.http.get(apiUrl + type, credentials)
+        .subscribe(res => {
+          resolve(res);
+        }, (err) => {
+          reject(err);
+        });
+    });
+
+  }
+
 }
 
